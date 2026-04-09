@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Chau Shorts",
+  "version": "1.0",
+  "description": "Elimina los YouTube Shorts de YouTube",
+  "permissions": ["activeTab", "storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

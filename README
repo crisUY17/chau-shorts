@@ -1,0 +1,18 @@
+# 🚫 Chau Shorts
+
+Extensión para Chrome que elimina las secciones de Shorts de YouTube.
+
+## ¿Qué elimina?
+- La sección de Shorts en el feed principal
+- Los Shorts mezclados en el feed
+- El ícono de Shorts en la barra lateral
+- Los Shorts en los resultados de búsqueda
+
+## Instalación
+1. Descargá o cloná el repositorio
+2. Abrí Chrome y andá a `chrome://extensions/`
+3. Activá el **Modo desarrollador** (esquina superior derecha)
+4. Clic en **Cargar descomprimida** y seleccioná la carpeta del proyecto
+
+## Uso
+Hacé clic en el ícono de la extensión para activarla o desactivarla.

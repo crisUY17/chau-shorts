@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 220px;
+      padding: 16px;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    h2 { margin: 0 0 8px; font-size: 16px; }
+    p  { font-size: 12px; color: #666; margin: 0 0 12px; }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .label {
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    /* Switch */
+    .switch { position: relative; width: 46px; height: 26px; }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute; inset: 0;
+      background: #ccc;
+      border-radius: 26px;
+      cursor: pointer;
+      transition: background .3s;
+    }
+    .slider::before {
+      content: "";
+      position: absolute;
+      width: 20px; height: 20px;
+      left: 3px; bottom: 3px;
+      background: white;
+      border-radius: 50%;
+      transition: transform .3s;
+    }
+    input:checked + .slider { background: #2e7d32; }
+    input:checked + .slider::before { transform: translateX(20px); }
+  </style>
+</head>
+<body>
+  <h2>🚫 Chau Shorts</h2>
+  <p>Elimina los YouTube Shorts automáticamente.</p>
+
+  <div class="toggle-row">
+    <span class="label" id="label">Activo</span>
+    <label class="switch">
+      <input type="checkbox" id="toggle" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
